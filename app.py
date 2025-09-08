@@ -361,7 +361,7 @@ PRESET_TIMETABLE = [
 {
 "route": "E16",
 "destination": "Worcester park",
-"stop_id": "Epsom High street",
+"stop_id": "Epsom High Street",
 "days": ["Mon", "Tue", "Wed", "Thu", "Fri"],
 "times": ["07:20","09:00","10:00","11:00","12:00","13:00",
 "14:05","15:10","16:30","17:45"],
