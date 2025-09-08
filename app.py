@@ -352,7 +352,7 @@ def filter_upcoming(trips, now_local, stop_id, horizon_min, limit):
     return results[:limit]
 
 def format_due(delta_min: int) -> str:
-    if delta_min <= 0:
+    if delta_min <= 2:
         return "Due"
     if delta_min < 60:
         return f"{delta_min} min"
