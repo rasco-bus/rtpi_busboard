@@ -419,7 +419,7 @@ def board():
         stop_id = available[0]
 
     upcoming = filter_upcoming(trips, now_local, stop_id, 120, 8)
-    return render_template_string(TEMPLATE, stop_id=stop_id, now=now_local,
+    return render_template_string(TEMPLATE, stop_id=stop_id, now=now_local.strftime("%Y-%m-%d %H:%M:%S"),
                                   upcoming=upcoming, format_due=format_due, stops=available)
 
 if __name__ == "__main__":
