@@ -423,7 +423,7 @@ TEMPLATE = """
   </style>
 </head>
 <body>
-  <h2>RTPI • Stop: {{stop_id}} • {{now}}</h2>
+  <h2>RASBUS • Stop: {{stop_id}} • {{now}}</h2>
 
   <form method="get" action="/">
     <label for="stop">Select Stop:</label>
