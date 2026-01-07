@@ -414,22 +414,22 @@ TEMPLATE = """
   <title>Bus Departures</title>
   <meta http-equiv="refresh" content="30">
   <style>
-    body { font-family: sans-serif; background: #111; color: #eee; text-align: center; }
-    table { margin: auto; border-collapse: collapse; }
-    th, td { padding: 8px 12px; border: 1px solid #444; }
-    th { background: #333; }
-    tr:nth-child(even) { background: #222; }
-    select, button { font-size: 1rem; padding: 4px 8px; margin-left: 4px; }
+  body { font-family: sans-serif; background: #111; color: #eee; text-align: center; }
+  table { margin: auto; border-collapse: collapse; }
+  th, td { padding: 8px 12px; border: 1px solid #444; }
+  th { background: #333; }
+  tr:nth-child(even) { background: #222; }
+  select, button { font-size: 1rem; padding: 4px 8px; margin-left: 4px; }
+
+  .logo {
+    color: red;
+    font-weight: bold;
+  }
   </style>
 </head>
 <body>
   <h2><span class="logo">RASBUS</span> • Stop: {{stop_id}} • {{now}}</h2>
 
-  .logo {
-  color: #e10600;   /* example red */
-  font-weight: bold;
-  letter-spacing: 2px;
-}
 
 
   <form method="get" action="/">
