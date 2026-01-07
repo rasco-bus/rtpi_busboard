@@ -168,7 +168,6 @@ PRESET_TIMETABLE = [
 "days": ["Mon", "Tue", "Wed", "Thu", "Fri"],
 "times": ["06:37","07:40","08:37","09:37","10:40","11:37","12:37","13:37","14:37","15:37","16:37","17:37","18:37","19:37","20:34"],
 },
-
 {
 "route": "166",
 "destination": "West Croyden",
@@ -179,7 +178,6 @@ PRESET_TIMETABLE = [
 "15:15","15:35","16:00","16:20","16:40","17:00","17:20","17:40","18:00","18:20","18:40","19:00","19:20","19:40","20:00",
 "20:20","20:40","21:00","21:15","21:33","22:00","22:30","23:00","23:30","00:02"],
 },
-
 {
 "route": "166",
 "destination": "Epsom",
@@ -333,6 +331,59 @@ PRESET_TIMETABLE = [
 "06:32","07:06","07:52","09:00","09:39","10:24","11:24",
 "12:24","13:23","14:23","15:48","16:46","17:49","19:05"]
 },
+{
+"route": "479",
+"destination": "TERMINATES HERE",
+"stop_id": "Bookham Station",
+"days": ["Mon", "Tue", "Wed", "Thu", "Fri"],
+"times": ["21:45"],
+},
+{
+"route": "479",
+"destination": "Guildford",
+"stop_id": "Bookham Station",
+"days": ["Mon", "Tue", "Wed", "Thu", "Fri"],
+"times": ["06:55","07:54","08:43","09:17","09:54","10:24","10:54","11:24","11:54",
+"12:24","12:54","13:24","13:54","14:28","15:06","15:57","16:30","17:00","17:39",
+"18:09","18:49","19:15","19:45","20:45"],
+},
+{
+"route": "479",
+"destination": "Epsom",
+"stop_id": "Bookham Station",
+"days": ["Mon", "Tue", "Wed", "Thu", "Fri"],
+"times": ["06:24","06:54","07:07","08:24","08:54","09:29","09:59","10:29","10:59",
+"11:29","11:59","12:29","12:59","13:29","13:59","14:48","15:18","15:59","16:35","17:21",
+"17:49","18:16","18:46","19:16","20:00","21:01"],
+},
+{
+"route": "479",
+"destination": "TERMINATES HERE",
+"stop_id": "Bookham Station",
+"days": ["Mon", "Tue", "Wed", "Thu", "Fri"],
+"times": ["21:45"],
+},
+{
+"route": "479",
+"destination": "TERMINATES HERE",
+"stop_id": "Bookham Station",
+"days": ["Mon", "Tue", "Wed", "Thu", "Fri"],
+"times": ["21:45"],
+},
+{
+"route": "479",
+"destination": "TERMINATES HERE",
+"stop_id": "Bookham Station",
+"days": ["Mon", "Tue", "Wed", "Thu", "Fri"],
+"times": ["21:45"],
+},
+{
+"route": "479",
+"destination": "TERMINATES HERE",
+"stop_id": "Bookham Station",
+"days": ["Mon", "Tue", "Wed", "Thu", "Fri"],
+"times": ["21:45"],
+},
 
    
 ]
@@ -422,7 +473,7 @@ TEMPLATE = """
   select, button { font-size: 1rem; padding: 4px 8px; margin-left: 4px; }
 
   .logo {
-    color: red;
+    color: #F28C28;
     font-weight: bold;
   }
   </style>
