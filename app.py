@@ -423,7 +423,14 @@ TEMPLATE = """
   </style>
 </head>
 <body>
-  <h2>RASBUS • Stop: {{stop_id}} • {{now}}</h2>
+  <h2><span class="logo">RASBUS</span> • Stop: {{stop_id}} • {{now}}</h2>
+
+  .logo {
+  color: #e10600;   /* example red */
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
 
   <form method="get" action="/">
     <label for="stop">Select Stop:</label>
