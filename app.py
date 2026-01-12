@@ -11,6 +11,18 @@ except Exception:
 
 app = Flask(__name__)
 
+from flask import Flask, send_from_directory
+
+app = Flask(__name__)
+
+@app.route("/robots.txt")
+def robots():
+    return send_from_directory(
+        directory=app.root_path,
+        path="robots.txt",
+        mimetype="text/plain"
+    )
+
 # -------------------------------
 # Demo Preset Timetable
 # -------------------------------
