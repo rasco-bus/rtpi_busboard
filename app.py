@@ -22,6 +22,24 @@ def robots():
         path="robots.txt",
         mimetype="text/plain"
     )
+from flask import Flask, send_from_directory, make_response
+
+app = Flask(__name__)
+
+@app.route("/robots.txt")
+def robots():
+    response = make_response(
+        send_from_directory(
+            directory=app.root_path,
+            path="robots.txt",
+            mimetype="text/plain"
+        )
+    )
+    response.headers["Cache-Control"] = "no-store, no-cache, must-revalidate, max-age=0"
+    response.headers["Pragma"] = "no-cache"
+    response.headers["Expires"] = "0"
+    return response
+
 
 # -------------------------------
 # Demo Preset Timetable
